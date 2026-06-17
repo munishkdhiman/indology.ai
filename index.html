@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indology.AI — The AI-First Portal for Indological Studies</title>
+  <meta name="description" content="Indology.AI is the world's first AI-powered research portal for Indological studies — explore Sanskrit texts, ancient history, philosophy, art, and civilizational knowledge powered by cutting-edge artificial intelligence." />
+  <meta name="keywords" content="indology, AI, Sanskrit, ancient India, Vedas, history, philosophy, culture, research" />
+  <meta property="og:title" content="Indology.AI — AI-First Portal for Indological Studies" />
+  <meta property="og:description" content="Explore Sanskrit texts, ancient history, and Indian civilization powered by AI." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Google+Sans+Text:wght@300;400;500&family=Noto+Sans+Devanagari:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" id="logo-link">
+        <img src="assets/logo.png" alt="Indology.AI" class="logo-img" id="logo-img" />
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#features"  class="nav-link" id="nav-features">Research</a>
+        <a href="#tools"     class="nav-link" id="nav-tools">Tools</a>
+        <a href="#knowledge" class="nav-link" id="nav-knowledge">Knowledge</a>
+        <a href="#volunteer" class="nav-link" id="nav-volunteer">Volunteer</a>
+        <a href="#contact"   class="nav-link" id="nav-contact">Contact Us</a>
+      </div>
+      <button class="hamburger" id="hamburger-btn" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero">
+    <!-- Video background -->
+    <div class="hero-video-wrap">
+      <video
+        id="hero-video"
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        poster="assets/hero_background.png"
+      >
+        <source src="assets/bg.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-video-overlay"></div>
+    </div>
+
+    <!-- Hero content -->
+    <div class="hero-content" id="hero-content">
+      <p class="hero-eyebrow" id="hero-eyebrow">ज्ञानं परमं ध्येयम् &nbsp;·&nbsp; The Highest Goal is Knowledge</p>
+      <h1 class="hero-title" id="hero-title">
+        5,000 Years of Knowledge.<br />One AI to Unlock It.
+      </h1>
+      <p class="hero-desc" id="hero-desc">
+        The world's first AI-powered research portal for Indological studies.
+        Decode Sanskrit manuscripts, map philosophical traditions, and explore
+        five millennia of Indian civilisation.
+      </p>
+      <div class="hero-actions" id="hero-actions">
+        <a href="#tools" class="btn-primary" id="explore-btn">Explore tools</a>
+        <a href="#features" class="btn-ghost" id="learn-btn">Learn more ↓</a>
+      </div>
+    </div>
+
+    <!-- Scroll cue -->
+    <div class="hero-scroll" id="hero-scroll">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ==================== MARQUEE ==================== -->
+  <div class="marquee-bar" id="marquee-strip">
+    <div class="marquee-track">
+      <span class="m-item">ऋग्वेद</span><span class="m-sep">·</span>
+      <span class="m-item">Sanskrit NLP</span><span class="m-sep">·</span>
+      <span class="m-item">Upanishads</span><span class="m-sep">·</span>
+      <span class="m-item">Manuscript OCR</span><span class="m-sep">·</span>
+      <span class="m-item">महाभारत</span><span class="m-sep">·</span>
+      <span class="m-item">Vedic Astronomy</span><span class="m-sep">·</span>
+      <span class="m-item">Arthashastra</span><span class="m-sep">·</span>
+      <span class="m-item">Philosophy AI</span><span class="m-sep">·</span>
+      <span class="m-item">अर्थशास्त्र</span><span class="m-sep">·</span>
+      <span class="m-item">Knowledge Graph</span><span class="m-sep">·</span>
+      <span class="m-item">Brahmi Script</span><span class="m-sep">·</span>
+      <span class="m-item">Civilizational Map</span><span class="m-sep">·</span>
+      <!-- duplicate -->
+      <span class="m-item">ऋग्वेद</span><span class="m-sep">·</span>
+      <span class="m-item">Sanskrit NLP</span><span class="m-sep">·</span>
+      <span class="m-item">Upanishads</span><span class="m-sep">·</span>
+      <span class="m-item">Manuscript OCR</span><span class="m-sep">·</span>
+      <span class="m-item">महाभारत</span><span class="m-sep">·</span>
+      <span class="m-item">Vedic Astronomy</span><span class="m-sep">·</span>
+      <span class="m-item">Arthashastra</span><span class="m-sep">·</span>
+      <span class="m-item">Philosophy AI</span><span class="m-sep">·</span>
+      <span class="m-item">अर्थशास्त्र</span><span class="m-sep">·</span>
+      <span class="m-item">Knowledge Graph</span><span class="m-sep">·</span>
+      <span class="m-item">Brahmi Script</span><span class="m-sep">·</span>
+      <span class="m-item">Civilizational Map</span><span class="m-sep">·</span>
+    </div>
+  </div>
+
+  <!-- ==================== INTRO / MISSION ==================== -->
+  <section class="intro-section" id="intro">
+    <div class="container">
+      <div class="intro-grid">
+        <div class="intro-left">
+          <span class="label">Our Mission</span>
+          <h2 class="section-title">Bridging the past<br /><em>with the possible</em></h2>
+        </div>
+        <div class="intro-right">
+          <p class="intro-body">Indology.AI brings together the rigour of classical scholarship and the reach of modern AI. We index 50,000+ manuscripts, power Sanskrit natural-language processing, and build the world's most comprehensive knowledge graph of Indian civilisation — so that every scholar, student, and curious mind can access the depth of 5,000 years of recorded thought.</p>
+          <div class="intro-stats">
+            <div class="stat">
+              <span class="stat-n" data-target="50000">0</span><span class="stat-suf">+</span>
+              <span class="stat-l">Manuscripts indexed</span>
+            </div>
+            <div class="stat">
+              <span class="stat-n" data-target="120">0</span><span class="stat-suf">+</span>
+              <span class="stat-l">Languages supported</span>
+            </div>
+            <div class="stat">
+              <span class="stat-n" data-target="12000">0</span><span class="stat-suf">+</span>
+              <span class="stat-l">Active scholars</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FEATURES ==================== -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Core capabilities</span>
+        <h2 class="section-title">Everything a researcher needs</h2>
+      </div>
+      <div class="features-list" id="features-grid">
+
+        <div class="feature-row" id="feat-1">
+          <div class="feature-num">01</div>
+          <div class="feature-body">
+            <h3>Sanskrit AI Engine</h3>
+            <p>Parse, translate and semantically analyse Sanskrit texts with language models trained on the entire classical corpus — Vedas, Upanishads, Puranas, Sutras and commentaries. Supports Devanagari, IAST, Harvard-Kyoto and SLP1.</p>
+            <div class="feature-tags">
+              <span>Sandhi Analysis</span><span>Compound Splitting</span><span>Morphological Parsing</span>
+            </div>
+          </div>
+          <div class="feature-visual fv-translate">
+            <div class="fv-card">
+              <p class="fv-devanagari">सर्वे भवन्तु सुखिनः</p>
+              <div class="fv-arrow">↓ AI Translation</div>
+              <p class="fv-english">"May all beings be happy"</p>
+              <span class="fv-source">Yajurveda 36.17 · 98% confidence</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-row feature-row-alt" id="feat-2">
+          <div class="feature-num">02</div>
+          <div class="feature-body">
+            <h3>Manuscript OCR &amp; Search</h3>
+            <p>Upload any scanned manuscript — palm leaf, paper, copper plate — and receive AI-transcribed, searchable text with confidence scoring, script identification across 28 Indic scripts, and palaeographic dating estimates.</p>
+            <div class="feature-tags">
+              <span>Brahmi</span><span>Grantha</span><span>Siddham</span><span>Tamil Grantha</span>
+            </div>
+          </div>
+          <div class="feature-visual fv-ocr">
+            <img src="assets/ai_manuscript.png" alt="Manuscript OCR" class="fv-img" />
+            <div class="fv-scan-line"></div>
+          </div>
+        </div>
+
+        <div class="feature-row" id="feat-3">
+          <div class="feature-num">03</div>
+          <div class="feature-body">
+            <h3>Philosophy Knowledge Map</h3>
+            <p>Navigate all six orthodox Darśanas and the rich landscape of Buddhist, Jain and heterodox traditions through our AI-built interactive knowledge graph — tracing lineages, debates, key thinkers and primary texts.</p>
+            <div class="feature-tags">
+              <span>Advaita Vedanta</span><span>Nyāya</span><span>Buddhism</span><span>Jainism</span>
+            </div>
+          </div>
+          <div class="feature-visual fv-graph">
+            <svg viewBox="0 0 320 220" width="100%" height="220">
+              <circle cx="160" cy="110" r="24" fill="#c9a96e" opacity="0.9"/>
+              <text x="160" y="115" text-anchor="middle" fill="#1a1209" font-size="9" font-family="Inter">Advaita</text>
+              <circle cx="60" cy="55" r="18" fill="none" stroke="#c9a96e" stroke-width="1" opacity="0.6"/>
+              <text x="60" y="59" text-anchor="middle" fill="#c9a96e" font-size="8" font-family="Inter">Nyāya</text>
+              <circle cx="260" cy="55" r="18" fill="none" stroke="#c9a96e" stroke-width="1" opacity="0.6"/>
+              <text x="260" y="59" text-anchor="middle" fill="#c9a96e" font-size="8" font-family="Inter">Sāṃkhya</text>
+              <circle cx="40" cy="165" r="18" fill="none" stroke="#8a7a5a" stroke-width="1" opacity="0.5"/>
+              <text x="40" y="169" text-anchor="middle" fill="#8a7a5a" font-size="8" font-family="Inter">Yoga</text>
+              <circle cx="280" cy="165" r="18" fill="none" stroke="#8a7a5a" stroke-width="1" opacity="0.5"/>
+              <text x="280" y="169" text-anchor="middle" fill="#8a7a5a" font-size="8" font-family="Inter">Mīmāṃsā</text>
+              <circle cx="160" cy="200" r="18" fill="none" stroke="#c9a96e" stroke-width="1" opacity="0.7"/>
+              <text x="160" y="204" text-anchor="middle" fill="#c9a96e" font-size="8" font-family="Inter">Vedānta</text>
+              <line x1="160" y1="86" x2="60" y2="73" stroke="#c9a96e" stroke-width="0.7" opacity="0.4" stroke-dasharray="3,3"/>
+              <line x1="160" y1="86" x2="260" y2="73" stroke="#c9a96e" stroke-width="0.7" opacity="0.4" stroke-dasharray="3,3"/>
+              <line x1="160" y1="134" x2="40" y2="149" stroke="#8a7a5a" stroke-width="0.7" opacity="0.3" stroke-dasharray="3,3"/>
+              <line x1="160" y1="134" x2="280" y2="149" stroke="#8a7a5a" stroke-width="0.7" opacity="0.3" stroke-dasharray="3,3"/>
+              <line x1="160" y1="134" x2="160" y2="182" stroke="#c9a96e" stroke-width="1" opacity="0.5"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="feature-row feature-row-alt" id="feat-4">
+          <div class="feature-num">04</div>
+          <div class="feature-body">
+            <h3>Historical Timeline AI</h3>
+            <p>Explore 5,000 years of Indian civilisation on a dynamic, AI-enhanced timeline. Connect events, dynasties, texts and cultural milestones across time and geography with correlated cross-civilisational context.</p>
+            <div class="feature-tags">
+              <span>10,000+ events</span><span>Dynasty maps</span><span>Trade routes</span>
+            </div>
+          </div>
+          <div class="feature-visual fv-timeline">
+            <div class="tl-line"></div>
+            <div class="tl-events">
+              <div class="tl-event" style="left:4%"><div class="tl-dot"></div><span>Indus<br/><small>3000 BCE</small></span></div>
+              <div class="tl-event" style="left:23%"><div class="tl-dot tl-gold"></div><span>Vedic<br/><small>1500 BCE</small></span></div>
+              <div class="tl-event" style="left:42%"><div class="tl-dot"></div><span>Maurya<br/><small>322 BCE</small></span></div>
+              <div class="tl-event" style="left:63%"><div class="tl-dot tl-gold"></div><span>Gupta<br/><small>320 CE</small></span></div>
+              <div class="tl-event" style="left:83%"><div class="tl-dot"></div><span>Vijayanagara<br/><small>1336 CE</small></span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TOOLS DEMO SECTION ==================== -->
+  <section class="tools-section" id="tools">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">AI Tools Suite</span>
+        <h2 class="section-title">Built for deep research</h2>
+        <p class="section-sub">A suite of AI tools designed for every dimension of Indological scholarship.</p>
+      </div>
+      <div class="tools-tabs" id="tools-tabs">
+        <button class="tab active" data-tab="translate" id="tab-translate">Sanskrit Translate</button>
+        <button class="tab" data-tab="ocr" id="tab-ocr">Manuscript OCR</button>
+        <button class="tab" data-tab="chat" id="tab-chat">Scholar Chat</button>
+        <button class="tab" data-tab="graph" id="tab-graph">Knowledge Graph</button>
+      </div>
+      <div class="tool-panels">
+
+        <div class="tool-panel active" data-panel="translate" id="panel-translate">
+          <div class="panel-demo">
+            <div class="demo-win-bar"><span></span><span></span><span></span><em>Sanskrit AI Translator</em></div>
+            <div class="demo-body-translate">
+              <div class="demo-in">
+                <label>Sanskrit input</label>
+                <div class="demo-textarea"><span class="dev-text">सर्वे भवन्तु सुखिनः। सर्वे सन्तु निरामयाः।<br/>सर्वे भद्राणि पश्यन्तु। मा कश्चिद्दुःखभाग्भवेत्॥</span></div>
+                <div class="scheme-pills"><span class="active">Devanagari</span><span>IAST</span><span>HK</span></div>
+              </div>
+              <div class="demo-out">
+                <label>AI translation</label>
+                <div class="demo-result">
+                  <p>May all beings be happy.<br/>May all be free from disease.<br/>May all see auspiciousness.<br/>May none suffer.</p>
+                  <div class="demo-chips">
+                    <span>Yajurveda 36.17</span><span>Anuṣṭubh metre</span><span>98% confidence</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-copy">
+            <h3>Sanskrit AI Engine</h3>
+            <p>Trained on millions of verses from Vedas, Upanishads, Puranas, Sutras and classical literature. Understands Sandhi, Samāsa, Kāraka resolution, and source attribution — all in a single query.</p>
+            <a href="#pricing" class="link-arrow" id="try-translate-btn">Start translating →</a>
+          </div>
+        </div>
+
+        <div class="tool-panel" data-panel="ocr" id="panel-ocr">
+          <div class="panel-demo">
+            <div class="demo-win-bar"><span></span><span></span><span></span><em>Manuscript OCR Engine</em></div>
+            <div class="ocr-body">
+              <div class="ocr-img-wrap">
+                <img src="assets/ai_manuscript.png" alt="Manuscript" class="ocr-demo-img"/>
+                <div class="ocr-scan"></div>
+              </div>
+              <div class="ocr-results-list">
+                <div class="ocr-r"><span class="ocr-script-name">Brahmi</span><div class="ocr-bar-wrap"><div class="ocr-fill" style="width:95%"></div></div><span>95%</span></div>
+                <div class="ocr-r"><span class="ocr-script-name">Grantha</span><div class="ocr-bar-wrap"><div class="ocr-fill" style="width:72%"></div></div><span>72%</span></div>
+                <div class="ocr-r"><span class="ocr-script-name">Tamil</span><div class="ocr-bar-wrap"><div class="ocr-fill" style="width:88%"></div></div><span>88%</span></div>
+                <div class="ocr-r"><span class="ocr-script-name">Devanagari</span><div class="ocr-bar-wrap"><div class="ocr-fill" style="width:61%"></div></div><span>61%</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-copy">
+            <h3>Manuscript OCR</h3>
+            <p>Upload scanned manuscripts in any Indian script and receive AI-transcribed, searchable text with confidence scoring, script identification and palaeographic dating estimates accurate to within 50 years.</p>
+            <a href="#pricing" class="link-arrow" id="try-ocr-btn">Try OCR engine →</a>
+          </div>
+        </div>
+
+        <div class="tool-panel" data-panel="chat" id="panel-chat">
+          <div class="panel-demo">
+            <div class="demo-win-bar"><span></span><span></span><span></span><em>Scholar AI Chat</em></div>
+            <div class="chat-body">
+              <div class="chat-msg user">What is the concept of Ṛta in the Rigveda?</div>
+              <div class="chat-msg ai">
+                <strong>Ṛta</strong> (ऋत) is one of the foundational concepts of the Rigveda, representing cosmic order, truth, and the principle that governs both the natural world and moral conduct.
+                <br/><br/>It appears over 300 times in the RV and is closely associated with Varuna and Mitra, who are described as its guardians (<em>ṛtasya gopā</em>)...
+                <div class="chat-sources"><span>RV 1.2.8</span><span>RV 1.105.12</span><span>Gonda (1959)</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-copy">
+            <h3>Scholar AI Chat</h3>
+            <p>Ask complex questions about Indian philosophy, history and culture. Our AI is trained on authoritative Indological sources — every answer is grounded in primary texts with full citations.</p>
+            <a href="#pricing" class="link-arrow" id="try-chat-btn">Start a conversation →</a>
+          </div>
+        </div>
+
+        <div class="tool-panel" data-panel="graph" id="panel-graph">
+          <div class="panel-demo">
+            <div class="demo-win-bar"><span></span><span></span><span></span><em>Knowledge Graph Explorer</em></div>
+            <div class="graph-body">
+              <svg viewBox="0 0 380 260" width="100%">
+                <circle cx="190" cy="130" r="28" fill="#c9a96e" opacity="0.9"/>
+                <text x="190" y="135" text-anchor="middle" fill="#1a1209" font-size="9.5" font-family="Inter" font-weight="500">Aryabhata</text>
+                <circle cx="70" cy="60" r="20" fill="none" stroke="#c9a96e" stroke-width="1.2" opacity="0.8"/>
+                <text x="70" y="64" text-anchor="middle" fill="#c9a96e" font-size="8" font-family="Inter">Āryabhaṭīya</text>
+                <circle cx="310" cy="60" r="20" fill="none" stroke="#c9a96e" stroke-width="1.2" opacity="0.8"/>
+                <text x="310" y="64" text-anchor="middle" fill="#c9a96e" font-size="8" font-family="Inter">Zero (Śūnya)</text>
+                <circle cx="50" cy="180" r="20" fill="none" stroke="#8a7a5a" stroke-width="1" opacity="0.6"/>
+                <text x="50" y="184" text-anchor="middle" fill="#8a7a5a" font-size="8" font-family="Inter">Gupta Era</text>
+                <circle cx="330" cy="180" r="20" fill="none" stroke="#8a7a5a" stroke-width="1" opacity="0.6"/>
+                <text x="330" y="184" text-anchor="middle" fill="#8a7a5a" font-size="8" font-family="Inter">Nalanda</text>
+                <circle cx="190" cy="230" r="20" fill="none" stroke="#c9a96e" stroke-width="1" opacity="0.7"/>
+                <text x="190" y="234" text-anchor="middle" fill="#c9a96e" font-size="8" font-family="Inter">Trigonometry</text>
+                <line x1="190" y1="102" x2="70" y2="78" stroke="#c9a96e" stroke-width="0.8" opacity="0.4"/>
+                <line x1="190" y1="102" x2="310" y2="78" stroke="#c9a96e" stroke-width="0.8" opacity="0.4"/>
+                <line x1="190" y1="158" x2="50" y2="162" stroke="#8a7a5a" stroke-width="0.8" opacity="0.3"/>
+                <line x1="190" y1="158" x2="330" y2="162" stroke="#8a7a5a" stroke-width="0.8" opacity="0.3"/>
+                <line x1="190" y1="158" x2="190" y2="210" stroke="#c9a96e" stroke-width="1" opacity="0.5"/>
+              </svg>
+            </div>
+          </div>
+          <div class="panel-copy">
+            <h3>Knowledge Graph</h3>
+            <p>Explore interconnected civilisational knowledge — people, texts, places and ideas — through an AI-built dynamic graph that surfaces connections invisible to traditional research methods.</p>
+            <a href="#pricing" class="link-arrow" id="try-graph-btn">Explore the graph →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== KNOWLEDGE BASE ==================== -->
+  <section class="knowledge-section" id="knowledge">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Knowledge base</span>
+        <h2 class="section-title">Five millennia of recorded thought</h2>
+      </div>
+      <div class="know-grid" id="knowledge-grid">
+        <div class="know-item" id="know-1">
+          <div class="know-number">2,847</div>
+          <h4>Vedic texts</h4>
+          <p>All four Vedas, 108 Upanishads, Brahmanas and Aranyakas with AI-assisted commentary and cross-references.</p>
+        </div>
+        <div class="know-item" id="know-2">
+          <div class="know-number">15k+</div>
+          <h4>Historical entries</h4>
+          <p>Dynasties, kingdoms, rulers, battles and archaeological evidence from the Indus Valley to the Vijayanagara Empire.</p>
+        </div>
+        <div class="know-item" id="know-3">
+          <div class="know-number">6</div>
+          <h4>Major schools</h4>
+          <p>All six orthodox Darśanas plus Buddhist, Jain and heterodox traditions with primary text access and lineage mapping.</p>
+        </div>
+        <div class="know-item" id="know-4">
+          <div class="know-number">50k+</div>
+          <h4>Art images</h4>
+          <p>Temple architecture, sculpture, iconography and visual traditions searchable by period, style and regional school.</p>
+        </div>
+        <div class="know-item" id="know-5">
+          <div class="know-number">12</div>
+          <h4>Vedic sciences</h4>
+          <p>Astronomy, mathematics, medicine, architecture, linguistics — each discipline indexed and cross-referenced with primary sources.</p>
+        </div>
+        <div class="know-item" id="know-6">
+          <div class="know-number">120+</div>
+          <h4>Languages</h4>
+          <p>Sanskrit, Prakrit, Pali, Tamil Sangam literature and 28 classical Indic scripts with full transliteration support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== VOLUNTEER ==================== -->
+  <section class="volunteer-section" id="volunteer">
+    <div class="container">
+      <div class="vol-grid">
+        <div class="vol-left">
+          <span class="label">Get involved</span>
+          <h2 class="section-title">Help preserve &amp;<br /><em>share India's heritage</em></h2>
+          <p class="vol-body">Indology.AI is a mission-driven initiative built on collaboration between AI engineers, classical scholars, linguists and passionate volunteers. There are many ways to contribute — no matter your background.</p>
+        </div>
+        <div class="vol-right">
+          <div class="vol-roles">
+
+            <div class="vol-role" id="vr-transcribe">
+              <div class="vol-icon">✦</div>
+              <div class="vol-role-body">
+                <h4>Manuscript Transcription</h4>
+                <p>Help digitise and transcribe Sanskrit, Tamil, Telugu and other classical manuscripts from our partner libraries and archives. No prior training required — guided onboarding provided.</p>
+              </div>
+            </div>
+
+            <div class="vol-role" id="vr-translate">
+              <div class="vol-icon">अ</div>
+              <div class="vol-role-body">
+                <h4>Translation &amp; Review</h4>
+                <p>Native or advanced speakers of Sanskrit, Pali, Tamil, Kannada, Telugu or Persian can help verify AI translations and contribute scholarly annotations to the knowledge base.</p>
+              </div>
+            </div>
+
+            <div class="vol-role" id="vr-research">
+              <div class="vol-icon">◈</div>
+              <div class="vol-role-body">
+                <h4>Research Contribution</h4>
+                <p>Academics and researchers can contribute essays, articles, primary source analyses and bibliography to the Indology.AI encyclopaedia — credited and peer-linked.</p>
+              </div>
+            </div>
+
+            <div class="vol-role" id="vr-tech">
+              <div class="vol-icon">∞</div>
+              <div class="vol-role-body">
+                <h4>Technology &amp; Development</h4>
+                <p>Developers, ML engineers and linguists can contribute to our open-source Sanskrit NLP toolkit, OCR models and knowledge graph infrastructure on GitHub.</p>
+              </div>
+            </div>
+
+          </div>
+          <a href="#contact" class="btn-volunteer" id="volunteer-cta">Express interest →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left">
+          <span class="label">Contact Us</span>
+          <h2 class="section-title">Get in touch</h2>
+          <p class="contact-body">Questions, collaborations, media enquiries or manuscript contributions — we'd love to hear from you.</p>
+          <div class="contact-details">
+            <div class="cd-item">
+              <span class="cd-label">General enquiries</span>
+              <a href="mailto:hello@indology.ai">hello@indology.ai</a>
+            </div>
+            <div class="cd-item">
+              <span class="cd-label">Research partnerships</span>
+              <a href="mailto:research@indology.ai">research@indology.ai</a>
+            </div>
+            <div class="cd-item">
+              <span class="cd-label">Volunteer &amp; contributions</span>
+              <a href="mailto:volunteer@indology.ai">volunteer@indology.ai</a>
+            </div>
+            <div class="cd-item">
+              <span class="cd-label">Press &amp; media</span>
+              <a href="mailto:press@indology.ai">press@indology.ai</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form" onsubmit="return false;">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Email</label>
+              <input type="email" id="cf-email" placeholder="your@email.com" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cf-subject">Subject</label>
+            <select id="cf-subject">
+              <option value="">What is this about?</option>
+              <option>Research collaboration</option>
+              <option>Manuscript contribution</option>
+              <option>Volunteer enquiry</option>
+              <option>Press / Media</option>
+              <option>Technical / API</option>
+              <option>General question</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" rows="5" placeholder="Your message..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary" id="cf-submit">Send message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo footer-logo">
+            <img src="assets/logo.png" alt="Indology.AI" class="logo-img logo-img-footer" />
+          </a>
+          <p>The AI-first portal for the study of Indian civilisation, knowledge and culture.</p>
+          <div class="footer-socials">
+            <a href="#" id="social-x" aria-label="X">𝕏</a>
+            <a href="#" id="social-li" aria-label="LinkedIn">in</a>
+            <a href="#" id="social-yt" aria-label="YouTube">▶</a>
+            <a href="#" id="social-gh" aria-label="GitHub">⌥</a>
+          </div>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h5>Platform</h5>
+            <a href="#tools">Sanskrit AI</a>
+            <a href="#tools">Manuscript OCR</a>
+            <a href="#tools">Philosophy Map</a>
+            <a href="#tools">Timeline</a>
+            <a href="#tools">Knowledge Graph</a>
+          </div>
+          <div class="footer-col">
+            <h5>Knowledge</h5>
+            <a href="#knowledge">Vedic Literature</a>
+            <a href="#knowledge">Ancient History</a>
+            <a href="#knowledge">Philosophy</a>
+            <a href="#knowledge">Art &amp; Architecture</a>
+            <a href="#knowledge">Languages</a>
+          </div>
+          <div class="footer-col">
+            <h5>Community</h5>
+            <a href="#">Scholar Forum</a>
+            <a href="#">Research Papers</a>
+            <a href="#">Events</a>
+            <a href="#">Blog</a>
+          </div>
+          <div class="footer-col">
+            <h5>Company</h5>
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Press</a>
+            <a href="#">Contact</a>
+            <a href="#">API Docs</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Indology.AI · Built with reverence for Indian civilisation.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
